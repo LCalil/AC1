@@ -47,4 +47,12 @@ if bissexto():
     print("O ano é bissexto.")
 else:
     print("O ano não é bissexto.")
+"""
+Exercício 2: Salário
+"""
 
+def calcula_salario(valor_hora, num_horas, irpf=0.275):
+
+    salario_bruto = valor_hora * num_horas
+    salario_liquido = salario_bruto - (salario_bruto * irpf)
+    return salario_liquido
